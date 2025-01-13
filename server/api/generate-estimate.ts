@@ -6,7 +6,7 @@ export default defineEventHandler(async (event) => {
     const { name } = await readBody(event);
 
     // Charger un PDF existant
-    const filePath = path.join(process.cwd(), 'assets', 'estimateTemplate.pdf')
+    const filePath = path.join(process.cwd(), 'server', 'assets', 'estimateTemplate.pdf')
     const existingPdfBytes = await fs.promises.readFile(filePath);
 
     // Créer un document PDF à partir du fichier existant
