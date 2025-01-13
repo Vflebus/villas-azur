@@ -8,7 +8,7 @@ export default defineEventHandler(async (event) => {
     // Charger un PDF existant
     // const filePath = path.join(process.cwd(), 'public', 'estimateTemplate.pdf');
     // const existingPdfBytes = await fs.promises.readFile(filePath);
-    const pdfResponse = await fetch('/estimateTemplate.pdf');
+    const pdfResponse = await fetch('https://villas-azur.vercel.app/estimateTemplate.pdf');
     if (!pdfResponse.ok) {
         throw new Error(`Erreur lors du téléchargement du fichier : ${pdfResponse.statusText}`);
     }
