@@ -44,19 +44,19 @@
             <h2 class="text-darkBlue font-nunito text-2xl">Entrez vos coordonnées pour recevoir un devis</h2>
             <div class="flex flex-col gap-[.5rem] w-full">
               <label class="label font-averta text-lg font-semibold" for=""> Nom:</label>
-              <input class="py-3 bg-white border-b" v-model="lastName" type="text" placeholder="Dupont" />
+              <input class="py-3 bg-white border-b focus:outline-none focus:border-black" v-model="lastName" type="text" placeholder="Dupont" />
             </div>
             <div class="flex flex-col gap-[.5rem] w-full">
               <label class="label font-averta text-lg font-semibold" for=""> Prénom:</label>
-              <input class="py-3 bg-white border-b" v-model="firstName" type="text" placeholder="Eric" />
+              <input class="py-3 bg-white border-b focus:outline-none focus:border-black" v-model="firstName" type="text" placeholder="Eric" />
             </div>
             <div class="flex flex-col gap-[.5rem] w-full">
               <label class="label font-averta text-lg font-semibold" for=""> Email:</label>
-              <input class="py-3 bg-white border-b" v-model="email" type="email" placeholder="email@example.com" />
+              <input class="py-3 bg-white border-b focus:outline-none focus:border-black" v-model="email" type="email" placeholder="email@example.com" />
             </div>
             <button type="submit" class="border-2 border-darkBlue text-darkBlue p-4 rounded-xl font-bold w-full lg:w-1/2">
               Demander un devis
-              <span v-if="!sendingMail"><Icon name="line-md:loading-loop h-4 w-4" /></span>
+              <span v-if="sendingMail"><Icon name="line-md:loading-loop" class="ml-4 h-4 w-4" /></span>
             </button>
           </form>
         </div>

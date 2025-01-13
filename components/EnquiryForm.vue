@@ -4,26 +4,26 @@
     <div class="flex flex-col lg:flex-row w-full gap-4 lg:gap-16">
       <div class="flex flex-col gap-[.5rem] w-full">
         <label class="label font-averta text-lg font-semibold" for="firstName">Prénom:</label>
-        <input class="py-3 bg-white border-b focus:outline-0 text-lg" v-model="firstName" type="text" placeholder="Votre prénom" id="firstName" />
+        <input class="py-3 bg-white border-b focus:outline-none focus:border-black text-lg" v-model="firstName" type="text" placeholder="Votre prénom" id="firstName" />
       </div>
       <div class="flex flex-col gap-[.5rem] w-full">
         <label class="label font-averta text-lg font-semibold" for="lastName">Nom:</label>
-        <input class="py-3 bg-white border-b focus:outline-0 text-lg" v-model="lastName" type="text" placeholder="Votre nom" id="lastName" />
+        <input class="py-3 bg-white border-b focus:outline-none focus:border-black text-lg" v-model="lastName" type="text" placeholder="Votre nom" id="lastName" />
       </div>
     </div>
     <div class="flex flex-col lg:flex-row w-full gap-4 lg:gap-16">
       <div class="flex flex-col gap-[.5rem] w-full">
         <label class="label font-averta text-lg font-semibold" for="email">Email:</label>
-        <input class="py-3 bg-white border-b focus:outline-0 text-lg" v-model="email" type="email" placeholder="Votre adresse mail" id="email" />
+        <input class="py-3 bg-white border-b focus:outline-none focus:border-black text-lg" v-model="email" type="email" placeholder="Votre adresse mail" id="email" />
       </div>
       <div class="flex flex-col gap-[.5rem] w-full">
         <label class="label font-averta text-lg font-semibold" for="phone">Téléphone:</label>
-        <input class="py-3 bg-white border-b focus:outline-0 text-lg" v-model="phone" type="tel" placeholder="Votre numéro de téléphone" id="phone" />
+        <input class="py-3 bg-white border-b focus:outline-none focus:border-black text-lg" v-model="phone" type="tel" placeholder="Votre numéro de téléphone" id="phone" />
       </div>
     </div>
     <div class="flex flex-col gap-[.5rem] w-full">
       <label class="label font-averta text-lg font-semibold" for="message">Message:</label>
-      <textarea class="py-3 bg-white border-b focus:outline-0 text-lg" v-model="enquiry" cols="40" rows="5" placeholder="Votre message" id="message"></textarea>
+      <textarea class="py-3 bg-white border-b focus:outline-none focus:border-black text-lg" v-model="enquiry" cols="40" rows="5" placeholder="Votre message" id="message"></textarea>
     </div>
     <p v-if="mailSent" class="italic self-start">Votre demande a bien été envoyée, nous vous recontacterons dans les meilleurs délais.</p>
     <button v-else type="submit" class="border-2 border-darkBlue text-darkBlue p-4 rounded-xl font-bold self-start">Envoyer</button>

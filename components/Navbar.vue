@@ -1,6 +1,6 @@
 <template>
   <div class="fixed top-0 h-[10vh] w-full bg-white bg-opacity-[0.2] backdrop-blur-2xl z-50 border-b border-b-white flex justify-between items-center p-4">
-    <NuxtLink to="/" class="h-full"><img draggable="false" src="/images/misc/logo-simple.png" alt="logo Villas Azur" class="h-full w-auto relative" /></NuxtLink>
+    <NuxtLink to="/" @click="showMenu = false" class="h-full"><img draggable="false" src="/images/misc/logo-simple.png" alt="logo Villas Azur" class="h-full w-auto relative" /></NuxtLink>
     <button @click="showMenu = !showMenu" class="pointer-cursor"><Icon name="fluent:navigation-32-filled" class="text-logoBlue h-8 w-8" /></button>
     <Transition name="modal-right">
       <div v-if="showMenu === true" class="absolute top-full right-0 w-full lg:w-[20vw] rounded-b-xl bg-white backdrop-blur-2xl border-b border-l border-white py-4">

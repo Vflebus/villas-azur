@@ -7,6 +7,11 @@
   </main>
 </template>
 
-<script setup lang="ts"></script>
-
-<style scoped></style>
+<script setup lang="ts">
+useSeoMeta({
+  title: "Villas Azur",
+  ogTitle: "Villas Azur",
+  description: "Agence immobilière en martinique. Vente sur plan, création de plans personnalisés et investissements CIOP",
+  ogDescription: "Agence immobilière en martinique. Vente sur plan, création de plans personnalisés et investissements CIOP",
+});
+</script>
