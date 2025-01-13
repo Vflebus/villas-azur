@@ -6,8 +6,13 @@ export default defineEventHandler(async (event) => {
     const { name } = await readBody(event);
 
     // Charger un PDF existant
-    const filePath = path.join(process.cwd(), 'public', 'estimateTemplate.pdf');
-    const existingPdfBytes = await fs.promises.readFile(filePath);
+    // const filePath = path.join(process.cwd(), 'public', 'estimateTemplate.pdf');
+    // const existingPdfBytes = await fs.promises.readFile(filePath);
+    const pdfResponse = await fetch('/estimateTemplate.pdf');
+    if (!pdfResponse.ok) {
+        throw new Error(`Erreur lors du téléchargement du fichier : ${pdfResponse.statusText}`);
+    }
+    const existingPdfBytes = await pdfResponse.arrayBuffer();
 
     // Créer un document PDF à partir du fichier existant
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
