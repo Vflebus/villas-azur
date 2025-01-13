@@ -2,9 +2,9 @@
   <section class="h-[100svh] relative p-5 lg:p-16 flex flex-col justify-end overflow-hidden">
     <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full h-full">
       <Transition name="hero-fade">
-        <img draggable="false" src="/images/villas/azur/beton/Image2.png" v-if="currentHero === 0" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
-        <img draggable="false" src="/images/villas/azur/beton/Image4.png" v-else-if="currentHero === 1" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
-        <img draggable="false" src="/images/villas/azur/beton/Image8.png" v-else-if="currentHero === 2" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
+        <img draggable="false" src="/images/villas/azur/beton/Image2.png" alt="" v-if="currentHero === 0" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
+        <img draggable="false" src="/images/villas/azur/beton/Image4.png" alt="" v-else-if="currentHero === 1" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
+        <img draggable="false" src="/images/villas/azur/beton/Image8.png" alt="" v-else-if="currentHero === 2" class="absolute top-0 left-0 w-full h-full object-cover animate-zoomHero" />
       </Transition>
     </div>
     <div class="absolute bottom-0 left-0 right-0 h-[30vh] bg-gradient-to-t from-darkBlue"></div>
