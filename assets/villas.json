@@ -1,0 +1,71 @@
+[
+  {
+    "name": "azur",
+    "surface": "100m²",
+    "image": "beton/Image1.png",
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur ante felis. Nullam vulputate diam porta, suscipit risus eget, convallis augue. Duis et arcu quis odio egestas ornare mattis accumsan dui. Pellentesque facilisis vitae ex quis tempor.",
+      "Quisque interdum nisi risus, a tristique urna fermentum sit amet. Etiam auctor ornare sem id placerat. Aliquam non elementum massa. Nunc iaculis justo nec aliquet bibendum. Etiam ex dolor, lobortis eu mauris eget, rutrum tincidunt dolor. Praesent semper blandit lacus non pulvinar."
+    ],
+    "rooms": 3,
+    "bathrooms": 2,
+    "imagesHighlight": {
+      "beton": {
+        "first": 1,
+        "second": 4,
+        "third": 8
+      },
+      "bois": {
+        "first": 1,
+        "second": 4,
+        "third": 8
+      }
+    }
+  },
+  {
+    "name": "emeraude",
+    "surface": "100m²",
+    "image": "beton/Image1.png",
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur ante felis. Nullam vulputate diam porta, suscipit risus eget, convallis augue. Duis et arcu quis odio egestas ornare mattis accumsan dui. Pellentesque facilisis vitae ex quis tempor.",
+      "Quisque interdum nisi risus, a tristique urna fermentum sit amet. Etiam auctor ornare sem id placerat. Aliquam non elementum massa. Nunc iaculis justo nec aliquet bibendum. Etiam ex dolor, lobortis eu mauris eget, rutrum tincidunt dolor. Praesent semper blandit lacus non pulvinar."
+    ],
+    "rooms": 2,
+    "bathrooms": 1,
+    "imagesHighlight": {
+      "beton": {
+        "first": 5,
+        "second": 2,
+        "third": 4
+      },
+      "bois": {
+        "first": null,
+        "second": null,
+        "third": null
+      }
+    }
+  },
+  {
+    "name": "turquoise",
+    "surface": "100m²",
+    "image": "beton/Image1.png",
+    "description": [
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur efficitur ante felis. Nullam vulputate diam porta, suscipit risus eget, convallis augue. Duis et arcu quis odio egestas ornare mattis accumsan dui. Pellentesque facilisis vitae ex quis tempor.",
+      "Quisque interdum nisi risus, a tristique urna fermentum sit amet. Etiam auctor ornare sem id placerat. Aliquam non elementum massa. Nunc iaculis justo nec aliquet bibendum. Etiam ex dolor, lobortis eu mauris eget, rutrum tincidunt dolor. Praesent semper blandit lacus non pulvinar."
+    ],
+    "rooms": 3,
+    "bathrooms": 2,
+    "imagesHighlight": {
+      "beton": {
+        "first": 1,
+        "second": 3,
+        "third": 4
+      },
+      "bois": {
+        "first": 1,
+        "second": 3,
+        "third": 4
+      }
+    }
+  }
+]

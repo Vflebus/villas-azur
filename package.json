@@ -1,0 +1,25 @@
+{
+  "name": "nuxt-app",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "nuxt build",
+    "dev": "nuxt dev",
+    "generate": "nuxt generate",
+    "preview": "nuxt preview",
+    "postinstall": "nuxt prepare"
+  },
+  "dependencies": {
+    "@nuxt/fonts": "0.10.3",
+    "@nuxt/icon": "1.10.1",
+    "@nuxtjs/tailwindcss": "6.12.2",
+    "@types/nodemailer": "^6.4.17",
+    "gsap": "^3.12.5",
+    "nodemailer": "^6.9.16",
+    "nuxt": "^3.14.1592",
+    "pdf-lib": "^1.17.1",
+    "vue": "latest",
+    "vue-router": "latest"
+  },
+  "packageManager": "yarn@1.22.21+sha1.1959a18351b811cdeedbd484a8f86c3cc3bbaf72"
+}
