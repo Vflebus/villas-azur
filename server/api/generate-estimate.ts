@@ -1,11 +1,13 @@
 import { PDFDocument, rgb } from 'pdf-lib';
-import fs from 'fs/promises';
+import * as path from 'node:path'
+import * as fs from 'node:fs'
 
 export default defineEventHandler(async (event) => {
     const { name } = await readBody(event);
 
     // Charger un PDF existant
-    const existingPdfBytes = await fs.readFile('./estimateTemplate.pdf');
+    const filePath = path.join(process.cwd(), 'assets', 'estimateTemplate.pdf')
+    const existingPdfBytes = await fs.promises.readFile(filePath);
 
     // Créer un document PDF à partir du fichier existant
     const pdfDoc = await PDFDocument.load(existingPdfBytes);
