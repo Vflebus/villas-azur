@@ -1,7 +1,7 @@
 <template>
   <section class="text-white text-center px-16 pb-40 pt-20 flex flex-col gap-8 items-center relative" id="presentationSection">
-    <img draggable="false" src="/images/misc/palm.png" class="absolute top-0 left-0 -translate-x-1/2 w-[40vw] h-auto palmAnimate z-50" />
-    <div class="absolute top-0 right-0 -scale-x-100 z-50">
+    <img draggable="false" src="/images/misc/palm.png" class="absolute top-0 left-0 -translate-x-1/2 w-[40vw] h-auto palmAnimate z-50 pointer-events-none" />
+    <div class="absolute top-0 right-0 -scale-x-100 z-50 pointer-events-none">
       <img draggable="false" src="/images/misc/palm.png" class="w-[40vw] h-auto palmAnimate -translate-x-1/2" />
     </div>
     <div class="absolute top-40 right-0 lg:static flex justify-center items-center w-[15vw] lg:w-[10vw] self-end">
