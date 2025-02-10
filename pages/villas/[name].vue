@@ -13,7 +13,7 @@
           <h1 class="text-2xl lg:text-[64px] lg:leading-[64px] font-bold lg:font-normal font-arkhip uppercase text-center">villa {{ villaName }}</h1>
           <div class="flex justify-center gap-4" v-if="villa.imagesHighlight.beton && villa.imagesHighlight.bois">
             <button :class="{ 'underline font-bold': material === 'beton' }" @click="material = 'beton'">Béton banché</button>
-            <button :class="{ 'underline font-bold': material === 'bois' }" @click="material = 'bois'">Bois</button>
+            <button v-if="villa.imagesHighlight.bois.first" :class="{ 'underline font-bold': material === 'bois' }" @click="material = 'bois'">Bois</button>
           </div>
         </div>
         <div class="flex gap-8 justify-center">
